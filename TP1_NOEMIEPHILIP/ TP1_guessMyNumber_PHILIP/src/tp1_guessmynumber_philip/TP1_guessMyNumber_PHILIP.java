@@ -29,16 +29,17 @@ public class TP1_guessMyNumber_PHILIP {
         System.out.println(d);
         System.out.println(e);
 */
-    int n = generateurAleat.nextInt(100);
+    int a = generateurAleat.nextInt(100);
     Scanner sc = new Scanner(System.in);
+    System.out.println("saisissez une valeur entre 1 et 100");
+    int b = sc.nextInt();
+    int nbtent=0;
+    while (a!=b){
+    if (b>a){System.out.println("trop grand");}
+    if (b<a){System.out.println("trop petit");}
+    nbtent++; b=sc.nextInt();}
+    if (a==b){System.out.println("gagne");
+    System.out.println("vous avez gagne en "+nbtent);}
     
-    
-
-    
-  
-
-
-
-    }
-    
+    }  
 }
