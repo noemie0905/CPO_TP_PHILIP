@@ -39,7 +39,7 @@ public class TP1_guessMyNumber_PHILIP {
     if (b<a){System.out.println("trop petit");}
     nbtent++; b=sc.nextInt();}
     if (a==b){System.out.println("gagne");
-    System.out.println("vous avez gagne en "+nbtent);}
-    
+    System.out.println("vous avez gagne en "+nbtent+" coups");}
+    if (nbtent>10){System.out.println("vous avez perdu");}
     }  
 }
