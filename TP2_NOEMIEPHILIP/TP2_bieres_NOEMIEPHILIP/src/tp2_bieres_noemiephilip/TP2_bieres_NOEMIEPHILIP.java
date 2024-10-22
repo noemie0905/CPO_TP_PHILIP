@@ -8,25 +8,29 @@ package tp2_bieres_noemiephilip;
  *
  * @author phili
  */
-public class TP2_bieres_NOEMIEPHILIP {
+public class TP2_bieres_NOEMIEPHILIP { 
+    
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        BouteilleBiere uneBiere = new BouteilleBiere() ; 
-        uneBiere.Nom = "Cuvée des trolls"; 
-        uneBiere.degreAlcool = 7.0 ;
-        uneBiere.brasserie="Dubuisson";
-        uneBiere.ouverte=false;
-        uneBiere.lireEtiquette(); 
-
+        BouteilleBiere uneBiere = new BouteilleBiere("Cuvee des trolls", 
+    7.0 ,"Dubuisson"); 
+        uneBiere.lireEtiquette();
     
-        BouteilleBiere secondeBiere = new BouteilleBiere() ; 
-        secondeBiere.Nom = "Leffe"; 
-        secondeBiere.degreAlcool = 6.6 ;
-        secondeBiere.brasserie="Abbaye de Leffe";
-        secondeBiere.ouverte=false;
-        secondeBiere.lireEtiquette(); 
+        BouteilleBiere secondeBiere = new BouteilleBiere("Leffe",6.6,"Abbaye de Leffe") ; 
+        secondeBiere.lireEtiquette();
+        
+        BouteilleBiere troisiemeBiere= new BouteilleBiere("Jupiler",5.9,"Jupiler");
+        troisiemeBiere.lireEtiquette();
+        
+        uneBiere.Decapsuler();
+        uneBiere.Decapsuler();
+
+        System.out.println(secondeBiere) ; 
+    
     }
 }
+   
+
