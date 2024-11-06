@@ -10,5 +10,12 @@ package tp2_manip_noemiephilip;
  * @author phili
  */
 public class Tartiflette {
+
+    int nbCalories;
     
+    public Tartiflette(int calories) {
+        this.nbCalories = calories;
+    }
 }
+    
+

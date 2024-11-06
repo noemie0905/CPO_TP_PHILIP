@@ -9,6 +9,11 @@ package tp2_manip_noemiephilip;
  *
  * @author phili
  */
-public class Moussaka {
+public class Moussaka {  
+    int nbCalories;
+    
+    public Moussaka(int calories) {
+        this.nbCalories = calories;
+    }
     
 }
