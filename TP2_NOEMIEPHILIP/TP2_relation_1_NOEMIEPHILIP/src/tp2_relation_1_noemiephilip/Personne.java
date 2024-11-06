@@ -26,7 +26,17 @@ public class Personne {
     public String toString() {
         return "Personne{" + "nom='" + nom + '\'' + ", prenom='" + prenom + '\'' + '}';
     }
+    public boolean ajouter_voiture(Voiture voiture_a_ajouter) {
+    if (voiture_a_ajouter.Proprietaire != null) {
+        return false; // La voiture a déjà un propriétaire
+    }
+    if (this.nbVoitures >= 3) {
+        return false; // La personne possède déjà 3 voitures
+    }
+    this.liste_voitures[this.nbVoitures] = voiture_a_ajouter;
+    voiture_a_ajouter.Proprietaire = this;
+    this.nbVoitures++;
+    return true;
 }
-
-    
 }
+   

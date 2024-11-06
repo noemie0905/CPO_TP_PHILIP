@@ -26,20 +26,20 @@ public class TP2_relation_1_NOEMIEPHILIP {
         
         bob.liste_voitures[0] = uneClio;
 bob.nbVoitures = 1;
-uneClio.Proprietaire = "bob";
+uneClio.Proprietaire = bob;
 
 System.out.println("La première voiture de Bob est " + bob.liste_voitures[0]);
 bob.liste_voitures[1] = uneAutreClio;
         bob.nbVoitures = 2;
-        uneAutreClio.Proprietaire = "bob";
+        uneAutreClio.Proprietaire = bob;
 
         reno.liste_voitures[0] = une2008;
         reno.nbVoitures = 1;
-        une2008.Proprietaire = "reno";
+        une2008.Proprietaire = reno;
 
         reno.liste_voitures[1] = uneMicra;
         reno.nbVoitures = 2;
-        uneMicra.Proprietaire = "reno";
+        uneMicra.Proprietaire = reno;
 
         System.out.println("Les voitures de Bob :");
         for (int i = 0; i < bob.nbVoitures; i++) {

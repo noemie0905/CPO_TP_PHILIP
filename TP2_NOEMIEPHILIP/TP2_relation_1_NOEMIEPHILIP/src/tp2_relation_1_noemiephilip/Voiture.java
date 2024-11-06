@@ -13,7 +13,7 @@ public class Voiture {
     String Modele;
     String Marque;
     int PuissanceCV;
-    String Proprietaire; // pour stocker le propriétaire
+    Personne Proprietaire; // pour stocker le propriétaire
 
     public Voiture(String modele, String marque, int puissanceCV) {
         this.Modele = modele;
