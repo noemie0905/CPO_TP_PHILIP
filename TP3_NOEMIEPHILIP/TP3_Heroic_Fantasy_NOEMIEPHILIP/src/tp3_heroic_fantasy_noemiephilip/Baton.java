@@ -16,4 +16,10 @@ public class Baton extends Arme {
         if (Age<100){this.Age = Age;}
         else{Age=99;}
     }  
+
+    @Override
+    public String toString() {
+        return "Baton{nom=" + nom + ", niveau=" + niveau + ", Age=" + Age + '}';
+    }
+    
 }
