@@ -17,6 +17,12 @@ public class Epee extends Arme {
         this.indice = indice;}
         else{indice=99;}
     }
+
+    @Override
+    public String toString() {
+        return "Epee{nom=" + nom + ", niveau=" + niveau + ", indice=" + indice + '}';
+    }
+    
 }
 
     
