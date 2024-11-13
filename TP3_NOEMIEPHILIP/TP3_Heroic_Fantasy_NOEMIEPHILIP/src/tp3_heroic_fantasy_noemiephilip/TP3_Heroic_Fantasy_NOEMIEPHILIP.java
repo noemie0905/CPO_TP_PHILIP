@@ -4,6 +4,11 @@
  */
 package tp3_heroic_fantasy_noemiephilip;
 
+import Armes.Epee;
+import Armes.Baton;
+import Armes.Arme;
+import java.util.ArrayList;
+
 /**
  *
  * @author phili
@@ -23,7 +28,16 @@ public class TP3_Heroic_Fantasy_NOEMIEPHILIP {
         System.out.println(Epee2);
         System.out.println(Baton1);
         System.out.println(Baton2);
+        
+ArrayList<Arme> tab= new ArrayList<Arme>();
+tab.add(Epee1);
+tab.add(Epee2);
+tab.add(Baton1);
+tab.add(Baton2);
 
-    }
-    
+for (int i=0; i<tab.size()-1; i++) {
+    System.out.println(tab.get(i)+", ");
+}
+System.out.print(tab.get(tab.size()-1));
+    }  
 }
